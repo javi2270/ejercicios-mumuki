@@ -19,9 +19,27 @@ El consumo de gas es: 4 dm3 si está prendida, 0 dm3 si está apagada.
 La definición del objeto hornalla debe incluir estos cuatro métodos:
 
     temperatura():devuelve un número de acuerdo a lo explicado arriba.
+    
     consumo(): devuelve un número de acuerdo a lo explicado arriba.
+    
     prender(): no devuelve ningún valor, realiza una acción.
+    
     apagar(): no devuelve ningún valor, realiza una acción. 
+
+El objeto debe funcionar como se indica abajo:
+
+##### >>> hornalla.prender()
+##### >>> hornalla.temperatura()   
+180
+##### >>> hornalla.consumo()
+4
+##### >>> hornalla.apagar()
+##### >>> hornalla.temperatura()   
+20
+##### >>> hornalla.consumo()
+0
+
+Para que el modelo de hornalla funcione correctamente, hay que incluir variables. ¿Cuántas? Alcanza con una. Si te sale con dos variables está OK, pero mejor si usás una sola.
 
 
 ## Ejercicio 2: Trencito de la alegría
@@ -32,9 +50,13 @@ Ahora nos piden hacer un modelo del trencito de la alegría, que entienda estos 
 
 
     vaCargado():verdadero si lleva más de 40 pasajeros, falso en caso contrario.
+    
     vaTranca(): verdadero si lleva menos de 10 pasajeros, falso en caso contrario.
+    
     subir(cant): aumenta la cantidad de pasajeros en lo que indica cant, un número.
+    
     bajar(cant): disminuye la cantidad de pasajeros en lo que indica cant, un número.
+    
     vaciar(): deja al trencito sin pasajeros.     
 
 Lo que sigue es un ejemplo del comportamiento que se espera.
@@ -72,15 +94,23 @@ A Ema le gusta vivir viajando, se la pasa yendo de ciudad en ciudad.
 En la parte de "Biblioteca" se definen tres ciudades. En este modelo, los objetos que representan ciudades saben responder a cuatro cosas
 
     haySol(): devuelve un booleano.
+    
     cantidadMuseos(): devuelve un número.
+    
     costoTransporte(): devuelve un número.
+    
     costoHotel(): devuelve un número. 
 
 Se nos pide que programemos el objeto que representa a Ema, que debe entender estos mensajes:
 
-    gastosDiarios(): devuelve un número que es la estimación de cuánto gasta Ema por día. Esto es la suma del costo de hotel y el costo de transporte de la ciudad donde esté, más 500 pesos para otros gastos.
-    estaComoda(): devuelve un booleano que indica si Ema está cómoda. Para que esto pase, la ciudad donde está debe cumplir dos condiciones: tiene que haber sol, y tiene que tener más de 5 museos.
-    mudarse(ciudad): mediante este método se informa que Ema se muda a la ciudad indicada en el argumento. El efecto de este mensaje es realizar una acción, no devuelve ningún valor. 
+    gastosDiarios(): devuelve un número que es la estimación de cuánto gasta Ema por día. Esto es la suma del costo de hotel
+    y el costo de transporte de la ciudad donde esté, más 500 pesos para otros gastos.
+    
+    estaComoda(): devuelve un booleano que indica si Ema está cómoda. Para que esto pase, la ciudad donde está debe cumplir 
+    dos condiciones: tiene que haber sol, y tiene que tener más de 5 museos.
+    
+    mudarse(ciudad): mediante este método se informa que Ema se muda a la ciudad indicada en el argumento. El efecto de este 
+    mensaje es realizar una acción, no devuelve ningún valor. 
 
 P.ej. la siguiente secuencia debe funcionar como se indica
 
