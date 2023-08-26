@@ -25,15 +25,15 @@ La definición del objeto hornalla debe incluir estos cuatro métodos:
 
 El objeto debe funcionar como se indica abajo:
 
->>> hornalla.prender()
->>> hornalla.temperatura()   
+##### >>> hornalla.prender()
+##### >>> hornalla.temperatura()   
 180
->>> hornalla.consumo()
+##### >>> hornalla.consumo()
 4
->>> hornalla.apagar()
->>> hornalla.temperatura()   
+##### >>> hornalla.apagar()
+##### >>> hornalla.temperatura()   
 20
->>> hornalla.consumo()
+##### >>> hornalla.consumo()
 0
 Para que el modelo de hornalla funcione correctamente, hay que incluir variables. ¿Cuántas? Alcanza con una. Si te sale con dos variables está OK, pero mejor si usás una sola.
 
