@@ -19,8 +19,11 @@ El consumo de gas es: 4 dm3 si está prendida, 0 dm3 si está apagada.
 La definición del objeto hornalla debe incluir estos cuatro métodos:
 
     temperatura():devuelve un número de acuerdo a lo explicado arriba.
+    
     consumo(): devuelve un número de acuerdo a lo explicado arriba.
+    
     prender(): no devuelve ningún valor, realiza una acción.
+    
     apagar(): no devuelve ningún valor, realiza una acción. 
 
 El objeto debe funcionar como se indica abajo:
@@ -47,9 +50,13 @@ Ahora nos piden hacer un modelo del trencito de la alegría, que entienda estos 
 
 
     vaCargado():verdadero si lleva más de 40 pasajeros, falso en caso contrario.
+    
     vaTranca(): verdadero si lleva menos de 10 pasajeros, falso en caso contrario.
+    
     subir(cant): aumenta la cantidad de pasajeros en lo que indica cant, un número.
+    
     bajar(cant): disminuye la cantidad de pasajeros en lo que indica cant, un número.
+    
     vaciar(): deja al trencito sin pasajeros.     
 
 Lo que sigue es un ejemplo del comportamiento que se espera.
