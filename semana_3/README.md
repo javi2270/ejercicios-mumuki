@@ -35,6 +35,7 @@ El objeto debe funcionar como se indica abajo:
 20
 ##### >>> hornalla.consumo()
 0
+
 Para que el modelo de hornalla funcione correctamente, hay que incluir variables. ¿Cuántas? Alcanza con una. Si te sale con dos variables está OK, pero mejor si usás una sola.
 
 
