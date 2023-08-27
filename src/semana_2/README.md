@@ -4,7 +4,7 @@ En Wollok, como en cualquier lenguaje, los números son valores: una expresión 
 
 
 
-#### >>> 3 + 4
+          >>> 3 + 4
           7
 
 
