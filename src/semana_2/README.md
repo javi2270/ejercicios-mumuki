@@ -31,9 +31,11 @@ Este método devuelve un valor booleano. Pero ya vimos que la expresión peso > 
 Para esto, analicemos dos casos:
 
 Imaginemos que el peso del objeto es 83. En este caso, el resultado de la expresión peso > 50 es true ... que es exactamente lo que queremos devolver.
-- Parecido si el peso es, ponele, 21: el resultado de peso > 50 es false, otra vez coincide con lo que queremos que devuelva esDificilDeMover().
-Entonces
-lo que queremos que devuelva es, exactamente, el resultado de peso > 50. Por eso al Wollok IDE no le gusta que armes el método con un if, te pide que lo hagas en forma más concisa y elegante:
+
+Parecido si el peso es, ponele, 21: el resultado de peso > 50 es false, otra vez coincide con lo que queremos que devuelva 
+
+    esDificilDeMover().
+Entonces lo que queremos que devuelva es, exactamente, el resultado de peso > 50. Por eso al Wollok IDE no le gusta que armes el método con un if, te pide que lo hagas en forma más concisa y elegante:
 
     method esDificilDeMover() {
       return (peso > 50)
